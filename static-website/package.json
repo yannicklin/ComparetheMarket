@@ -1,0 +1,27 @@
+{
+  "name": "static-website",
+  "version": "0.0.1",
+  "description": "A static website for Compare the Market Trial",
+  "keywords": [
+    "compare-the-market",
+    "static",
+    "website",
+    "html5boilerplate"
+  ],
+  "license": "GPLv2",
+  "private": true,
+  "author": "Yannick Lin",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

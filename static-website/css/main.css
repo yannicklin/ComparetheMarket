@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;0,800;1,600&display=swap');
+
+/* General */
+html {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.navbar-dark .navbar-nav * {
+  color: rgba(255,255,255, 0.9) !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: rgba(255,255,255, 1) !important;
+}
+
+
+/* Header */
+header {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+}
+header a.navbar-brand {
+  font-size: 3rem;
+}
+header a.nav-link.btn {
+  background-color: #0ebfdd;
+}
+
+
+/* Content Sections */
+section {
+  padding: 2rem 0;
+}
+section * {
+  padding: 0.5rem 0;
+}
+section h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+}
+#section-our-mission {
+  background-image: url('../img/Layer 78.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+#section-our-mission h2 i {
+  font-size: 0.5rem;
+  vertical-align: middle;
+}
+#section-about h2 {
+  color: #0ebfdd;
+}
+#section-team {
+  background-color: #0ebfdd;
+}
+#section-team .member p {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+#section-team .member p:nth-of-type(1) {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+#section-team .member p:nth-of-type(2) {
+  font-weight: 600;
+  font-style: oblique;
+}
+#section-map iframe {
+  padding: 0;
+}
+
+
+/* Footer */
+footer {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+}
+footer #navbarFooterSocial a {
+  margin: 0 0.2rem;
+  line-height: 1;
+}
+footer #navbarFooterSocial a i {
+  width: 1rem;
+  text-align: center;
+}
