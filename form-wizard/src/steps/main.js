@@ -7,6 +7,9 @@ import Submission from './submission';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 export class StepForm extends Component {
+    /**
+     * Overall Fields stored
+     */
     state = {
         step: 1, // initial step
 
@@ -24,6 +27,9 @@ export class StepForm extends Component {
         postCode: ''
     }
 
+     /**
+     * Function: process to next step
+     */
     nextStep = () => {
         const { step } = this.state;
         this.setState({
@@ -31,6 +37,9 @@ export class StepForm extends Component {
         });
     }
 
+     /**
+     * Function: process to next step
+     */
     prevStep = () => {
         const { step } = this.state;
         this.setState({
@@ -38,10 +47,18 @@ export class StepForm extends Component {
         });
     }
 
+
+     /**
+     * Function: process to next step
+     */
     updateValue = (input, target) => {
         this.setState({[input]: target.value});
     }
 
+
+     /**
+     * Function: call the related step component
+     */
     showStep = () => {
         const { step, firstName, lastName, email, phone, streetNumber, streetName, streetType, suburb, postCode } = this.state;
 
@@ -80,6 +97,9 @@ export class StepForm extends Component {
             />);
     }
 
+    /**
+     * Function: step page rendering
+     */
     render(){
         const { step } = this.state;
         

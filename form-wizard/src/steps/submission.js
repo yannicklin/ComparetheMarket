@@ -3,10 +3,18 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 
 class Submission extends Component {
+
+    /**
+     * Function: process to previous step
+     */
     back = e => {
         e.preventDefault();
         this.props.prevStep();
     }
+
+    /**
+     * Function: step page rendering
+     */
     render(){
         const { firstName, lastName, email, phone, streetNumber, streetName, streetType, suburb, postCode } = this.props;
         return(
